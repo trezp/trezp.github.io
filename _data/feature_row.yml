@@ -19,3 +19,6 @@ portfolio:
   - image_path: https://source.unsplash.com/600x400/?workflow
     title: "Portfolio Piece 3"
     excerpt: "Optimizing onboarding with video content."
+git add index.html _data/feature_row.yml
+git commit -m "Add splash image and feature rows"
+git push
