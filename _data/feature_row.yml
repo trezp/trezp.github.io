@@ -1,0 +1,21 @@
+intro:
+  - image_path: https://source.unsplash.com/600x400/?technology
+    title: "Instructional Design"
+    excerpt: "Modular, self-paced content development with accessible design."
+  - image_path: https://source.unsplash.com/600x400/?code
+    title: "Front-End Development"
+    excerpt: "Interactive lessons using HTML, CSS, JavaScript."
+  - image_path: https://source.unsplash.com/600x400/?notebook
+    title: "Learning Strategy"
+    excerpt: "Needs analysis, learner personas, and curriculum planning."
+
+portfolio:
+  - image_path: https://source.unsplash.com/600x400/?education
+    title: "Portfolio Piece 1"
+    excerpt: "An example of interactive course design."
+  - image_path: https://source.unsplash.com/600x400/?interface
+    title: "Portfolio Piece 2"
+    excerpt: "Designing UI tutorials for developers."
+  - image_path: https://source.unsplash.com/600x400/?workflow
+    title: "Portfolio Piece 3"
+    excerpt: "Optimizing onboarding with video content."
