@@ -1,0 +1,31 @@
+{% assign row = site.data.feature_row[include.id] %}
+
+
+{% if row %}
+  <div class="feature__wrapper">
+    {% for feature in row %}
+      <div class="feature__item{% if include.type %} feature__item--{{ include.type }}{% endif %}">
+        {% if feature.image_path %}
+          <div class="feature__image">
+            <img src="{{ feature.image_path | relative_url }}" alt="{{ feature.alt | default: feature.title }}">
+          </div>
+        {% endif %}
+        <div class="feature__content">
+          {% if feature.title %}
+            <h3 class="feature__title">{{ feature.title }}</h3>
+          {% endif %}
+          {% if feature.excerpt %}
+            <p class="feature__excerpt">{{ feature.excerpt }}</p>
+          {% endif %}
+          {% if feature.btn_label and feature.btn_url %}
+            <a href="{{ feature.btn_url | relative_url }}" class="btn btn--primary">
+              {{ feature.btn_label }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p><strong>feature_row error:</strong> No data found for id "{{ include.id }}"</p>
+{% endif %}

@@ -3,3 +3,18 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Jekyll output and caches
+_site/
+.sass-cache/
+.jekyll-cache/
+
+# Bundler and Ruby
+vendor/
+Gemfile.lock
+
+# macOS system files
+.DS_Store
+
+# VS Code settings (if applicable)
+.vscode/
